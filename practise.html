@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="main-div">
+      <div id="secondary-div">
+        <button
+          id="b-1"
+          style="background-color: aqua; width: 500; height: 300px"
+        >
+          Click me I am Aqua
+        </button>
+        <button
+          id="b-2"
+          style="background-color: blue; width: 500; height: 300px"
+        >
+          Click me I am Blue
+        </button>
+      </div>
+      <div>
+        <button
+          id="b-3"
+          style="background-color: chocolate; width: 500; height: 300px"
+        >
+          Click me I am Brown
+        </button>
+        <button
+          id="b-4"
+          style="background-color: chartreuse; width: 500; height: 300px"
+        >
+          Click me I am Grren
+        </button>
+      </div>
+    </div>
+    <script>
+      let b1 = document.querySelector("#b-1");
+      let b2 = document.querySelector("#b-2");
+      let b3 = document.querySelector("#b-3");
+      let b4 = document.querySelector("#b-4");
+      let d2 = document.querySelector("#secondary-div");
+      //   b1.addEventListener("click", (e) => {
+      //     alert(`B1 was pressed and event is ${e}`);
+      //   });
+      b2.addEventListener("click", (e) => {
+        alert(`B2 was pressed and event is ${e}`);
+      });
+      b3.addEventListener("click", (e) => {
+        alert(`B3 was pressed and event is ${e}`);
+      });
+      b4.addEventListener("click", (e) => {
+        // alert(`B4 was pressed and event is ${e}`);
+
+        const button = document.querySelectorAll("button");
+        const buttons = [...button];
+        buttons.forEach((b) => {
+          b.innerHTML = `${b.innerHTML} Changed`;
+          b.style.backgroundColor = "Yellow";
+        });
+      });
+
+      //   d2.addEventListener("click", (e) =>
+      //     alert(`Event was pressed on d2 event is ${e}`)
+      //   );
+
+      let map = new Map();
+      map.set(1, "Bilal");
+      map.set(2, "Nasir");
+      map.set("caste", "Gujjar");
+
+      console.log(map.get(1));
+
+      map.clear();
+
+      const arr1 = [1, 4, 1, 4, 2, 2];
+      const arr2 = [5, 6, 2, 4, 1, 4];
+      const arr3 = [3, 4, 5, 5, 6, 2, 8, 9];
+
+      arr1.forEach((value) => {
+        if (map.has(value)) {
+          let v = map.get(value);
+          console.log(v);
+          map.set(value, ++v);
+          console.log(map);
+        } else map.set(value, 1);
+      });
+
+      for (const key of arr2) {
+        if (map.has(key)) {
+          let v = map.get(key);
+          map.set(key, ++v);
+          console.log(map);
+        } else map.set(key, 1);
+      }
+
+      arr3.forEach((value) => {
+        if (map.has(value)) {
+          let v = map.get(value);
+          console.log(v);
+          map.set(value, ++v);
+          console.log(map);
+        } else map.set(value, 1);
+      });
+      let maxKey = -1;
+      let maxValue = -1;
+      for (const [key, value] of map.entries()) {
+        if (value > maxValue) {
+          maxKey = key;
+          maxValue = value;
+        }
+      }
+      console.log(
+        `Repition for ${maxKey} is the greatest which counts ${map.get(maxKey)}`
+      );
+      console.log(map);
+    </script>
+  </body>
+</html>

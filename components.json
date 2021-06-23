@@ -1,0 +1,84 @@
+{
+    "categories": [
+        "Electronic Devices",
+        "Electronic Accessories",
+        "Tv & Home Appliance",
+        "Official Appliances",
+        "Groceries &amp; Pets",
+        "Home &amp; Lifestyle",
+        "Women's Fashion",
+        "Men's Fashion",
+        "Watches, Bags &amp; Jewelery",
+        "Automotive &amp; Motorbike"
+    ],
+    "customerCare": [
+        "Help Center",
+        "How to Buy",
+        "Track Your Daraz Order",
+        "Corporate & Bulk Purchasing",
+        "Returns & Refunds",
+        "Daraz Shop",
+        "Contact Us",
+        "Purchase Protection",
+        "Daraz Pick up Points",
+        "Fulfilled by Daraz (FBD)"
+    ],
+    "makeMoney": [
+        "Daraz University",
+        "Sell on Daraz",
+        "Join the Daraz Affiliate Program"
+    ],
+    "darazOptions": [
+        "About Us",
+        "Digital Payments",
+        "Daraz Cares",
+        "Daraz Blog",
+        "Terms & Conditions",
+        "Privacy Policy"
+    ],
+    "ntn": "4012118-6",
+    "strn": "1700401211818",
+    "pColors": [
+        "Red",
+        "Yellow",
+        "Green",
+        "Purple",
+        "Orange",
+        "White",
+        "Black"
+    ],
+    "sColors": [
+        "Pink",
+        "Silver",
+        "Golden",
+        "Gray",
+        "Voilet",
+        "Maroon"
+    ],
+    "related": [
+        "Water Bottles",
+        "Thermal Flask"
+    ],
+    "service": [
+        "Multi Color",
+        "Cash on Delivery",
+        "Fullfilled by Daraz",
+        "Free Shopping",
+        "DarazMall"
+    ],
+    "location": [
+        "Pakistan",
+        "China",
+        "Indonesia",
+        "Palestine"
+    ],
+    "bottleCapacity": [
+        "500ML",
+        "850ML",
+        "16oz",
+        "2L",
+        "750ml",
+        "1L",
+        "1.5L"
+    ]
+}

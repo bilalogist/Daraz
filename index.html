@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+
+    <title>Bottles - Buy Bottle at a Best Price</title>
+  </head>
+  <body>
+
+    <header class="sticky-top">
+    <!-- Top navbar with some links -->
+    <nav
+      class="navbar p-0 navbar-expand d-none d-lg-block navbar-light bg-light top-navbar"
+    >
+      <div class="container">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">SAVE MORE ON APP</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">DARAZ AFFILIATE PROGRAM</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">SELLS</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">CUSTOMER CARE</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">TRACK CARE</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">LOGIN</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">SIGN UP</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- pimary NavBar -->
+    <div class=" shadow">
+      <nav class="navbar navbar-expand-lg bg-white navbar-light pt-2">
+        <div class="container">
+          <div class="w-25">
+            <a href="index.html" class="navbar-brand">
+              <img src="images/logo.png" width="140px" alt="logo-image" />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target=".navbar-drop"
+          >
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+          <div class="collapse navbar-collapse navbar-drop">
+            <ul class="navbar-nav w-100">
+              <li class="nav-item w-75 d-inline">
+                <form class="form-inline pt-2">
+                  <div class="input-group w-100">
+                    <input
+                      type="text"
+                      placeholder="Search in Daraz"
+                      class="form-control bg-light p-2 border-0 w-90"
+                    />
+                    <div class="input-group-append w-10">
+                      <button class="btn btn-danger" type="button">
+                        <i class="fa fa-search w-100"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </li>
+
+              <li class="nav-item pt-1 w-10 ">
+                <a href="cart.html">
+                  <div class="menutoggle">
+                  <span class="text-dark cart-format">
+                    <ion-icon name="cart-outline"> </ion-icon>
+                  </span>
+                  <span class="badge bg-danger text-white number-badge"></span>
+                </div>
+              </a>
+              </li>
+
+              <li class="nav-item w-15 d-none d-lg-block">
+                <a href="#"
+                  ><img height="48px" src="images/app-logo.png" alt="App Link"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Secondary Nav-Bar used for menu -->
+
+      <nav class="navbar navbar-expand-md bg-white navbar-light">
+        <div class="container">
+          <div class="dropdown">
+            <a
+              class="dropdown-toggle pr-8 secondary-font-style h5"
+              data-toggle="dropdown"
+              >Categories</a
+            >
+
+            <div class="dropdown-menu">
+              <!-- All the categories will come here -->
+            </div>
+          </div>
+
+          <div class="collapse navbar-collapse navbar-drop">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a href="#" class="secondary-font-style nav-link"
+                  ><i class="fas fa-globe"></i> Daraz Mall</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="secondary-font-style nav-link"
+                  ><i class="fab fa-dyalog"></i> dMart</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="secondary-font-style nav-link"
+                  ><span><i class="fas fa-ticket-alt mr-2"></i> </span>Fashion &
+                  Lifestyle</a
+                >
+              </li
+              <li class="nav-item">
+                <a href="#" class="secondary-font-style nav-link"
+                  ><i class="fas fa-plane mr-2"></i>Global Collection</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="secondary-font-style nav-link"
+                  ><i class="fas fa-wallet mr-2"></i>Digital Sahulat</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="secondary-font-style nav-link"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+    <!-- the header section Ends here  -->
+
+    <div class="container pt-2">
+      <!-- Breadcrumbs -->
+
+      <nav cl>
+        <ol class="breadcrumb bg-white pb-0">
+          <li class="breadcrumb-item active">
+          </li>
+          <li class="breadcrumb-item bread-inactive">Search Results</li>
+        </ol>
+      </nav>
+      <hr />
+    </div>
+    <!-- Ending Breadcrumbs -->
+
+    <div class="container">
+      <div class="row">
+        <!-- Left Pane Starts Here -->
+        <div class="col-sm-3 d-none d-md-block">
+          <p>Related Categories</p>
+          <div id="related">
+            <!-- <a href="" class="side-buttons d-block">Water Bottles</a>
+          <a href="" class="side-buttons">Thermal flask</a> -->
+          
+          </div>
+          <hr />
+          <p>Color Family</p>
+          <div id="primary-Colors-bar">
+
+          </div>
+          <div id="check-box-div" class="collapse">
+            <div id="secondary-Colors-bar">
+
+            </div>
+           
+          </div>
+          <a
+            href=""
+            id="showmorebutton"
+            class="custom-aqua side-buttons"
+            data-target="#check-box-div"
+            data-toggle="collapse"
+            >Show more</a
+          >
+
+          <hr />
+          <!-- Service Section -->
+          <p>Service</p>
+          <div id="service">
+          <!-- will be injected by js -->
+          </div>
+  
+          <!-- Location Section -->
+          <hr />
+          <p>Location</p>
+
+          <div id="location">
+
+          </div>
+          <!-- Price  -->
+          <hr />
+          <div>
+            <label for="Price" class="d-block">Price</label>
+            <input
+              type="number"
+              name=""
+              id=""
+              style="width: 48px; height: 38px"
+            />
+            <span>-</span>
+            <input
+              type="number"
+              name=""
+              id=""
+              placeholder="Max"
+              style="width: 52px; height: 38px"
+            />
+            <button class="btn background-orange">
+              <span class="text-white"><i class="fa fa-play"></i></span>
+            </button>
+          </div>
+
+          <!-- Ratings -->
+          <hr />
+          <p>Rating</p>
+          <a href="#" class="decor-none">
+            <p>
+              <span style="color: #faca51"
+                ><i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i
+              ></span>
+            </p>
+          </a>
+          <a href="#" class="decor-none">
+            <p>
+              <span style="color: #faca51"
+                ><i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span
+              ><span class="color-grey"><i class="fa fa-star"></i></span>
+              <span class="side-buttons"> And Up</span>
+            </p>
+          </a>
+          <a href="#" class="decor-none">
+            <p>
+              <span style="color: #faca51"
+                ><i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i></span
+              ><span class="color-grey">
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i
+              ></span>
+              <span class="side-buttons"> And Up</span>
+            </p>
+          </a>
+          <a href="#" class="decor-none">
+            <p>
+              <span style="color: #faca51"
+                ><i class="fa fa-star"></i> <i class="fa fa-star"></i></span
+              ><span class="color-grey">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i
+              ></span>
+              <span class="side-buttons"> And Up</span>
+            </p>
+          </a>
+          <a href="#" class="decor-none">
+            <p>
+              <span style="color: #faca51"><i class="fa fa-star"></i></span
+              ><span class="color-grey">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i
+              ></span>
+              <span class="side-buttons"> And Up</span>
+            </p>
+          </a>
+          <!-- Sport Water Bottle Capacity (litres) -->
+          <hr />
+          <p>Sport Water Bottle Capacity (litres)</p>
+
+          <div id="water-bottle-capacity">
+            <!-- will be injected by js -->
+          </div>
+
+          <!-- Left Pane Ends Below -->
+        </div>
+
+        <!-- Right Pane Starts Here -->
+        <div class="col-md-9">
+          <div class="row align-items-center">
+            <div class="col-4 align-self-center">
+              <span class="secondary-font-style"
+                >194126 items found for "Bottle"</span
+              >
+            </div>
+            <div class="col-3"></div>
+            <div class="col-3">
+              <span class="mr-1 secondary-font-style">Sort By:</span>
+
+              <div class="dropdown d-inline">
+                <a
+                  href=""
+                  class="secondary-font-style dropdown-toggle btn btn-white py-2 pl-2 pr border"
+                  data-toggle="dropdown"
+                >
+                  Best Match
+                </a>
+
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item btn">Price high to low</a>
+                  <a href="#" class="dropdown-item">Price low to high</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-2 pl-5">
+              <span class="secondary-font-style">View:</span>
+
+              <a href=""><i class="fas fa-list color-grey"></i></a>
+              <a href=""><i class="fas fa-th active"></i></a>
+            </div>
+          </div>
+          <hr class="mt-3" />
+
+          <div
+            class="d-flex justify-content-around"
+            id="cards-section"
+            style="flex-wrap: wrap"
+          >
+          <!-- Cards will come Here from Java script -->
+ 
+            <!-- Cards End here****** -->
+          </div>
+          <!-- Flex for cards -->
+
+          <!-- Pagination -->
+          <nav>
+            <ul class="pagination justify-content-end">
+              <li class="disabled mr-2">
+                <a href="#" class="page-link text-dark"><</a>
+              </li>
+              <li class="page-item mr-2 active">
+                <a href="#" class="page-link text-dark">1</a>
+              </li>
+              <li class="page-item mr-2">
+                <a href="#" class="page-link text-dark">2</a>
+              </li>
+              <li class="page-item mr-2">
+                <a href="#" class="page-link text-dark">3</a>
+              </li>
+              <li class="page-item mr-2">
+                <a href="#" class="page-link text-dark">4</a>
+              </li>
+
+              <li class="page-item mr-2"><p class="lead">...</p></li>
+              <li class="page-item mr-2">
+                <a href="#" class="page-link text-dark">66</a>
+              </li>
+              <li class="page-item mr-2">
+                <a href="#" class="page-link text-dark">></a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Pagination Ends -->
+
+          <!-- Seller Picks -->
+          <div class="d-none d-md-block">
+            <p>Seller Picks</p>
+
+            <!-- //carousel starts here -->
+            <div
+              id="multi-cards-row"
+              class="carousel slide carousel-multi-item"
+              data-ride="carousel"
+            >
+              <!--Indicators-->
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#multi-cards-row"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#multi-cards-row" data-slide-to="1"></li>
+                <li data-target="#multi-cards-row" data-slide-to="2"></li>
+              </ol>
+              <!--/.Indicators-->
+
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <!-- Card Start -->
+                      <a href="" target="_blank">
+                        <div class="card card-size card-shadow border-0">
+                          <div class="">
+                            <img
+                              src="images/bottle-img3.jpg"
+                              alt=""
+                              class="card-img-top"
+                            />
+                            <div class="card-body p-3">
+                              <div class="small_images">
+                                <img
+                                  src="images/bottle-img3.jpg"
+                                  width="32px"
+                                  class="border border-danger border-circular"
+                                  alt=""
+                                />
+                              </div>
+                              <img src="images/badge.PNG" class="mt-2" alt="" />
+                              <p class="card-title crop-text-2 mt-2">
+                                SHAKER BOTTLE PROTEIN SHAKER BOTTLE SPRING
+                                BOTTLE WITH TWO SPARE JAR APOLLO WB-01
+                              </p>
+
+                              <p class="price-style">RS. 570</p>
+                              <p class="small"><del>Rs. 600</del>-5%</p>
+                              <div class="row justify-content-between px-2">
+                                <p class="small">
+                                  <span style="color: #faca51"
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                  ></span>
+                                  (2)
+                                </p>
+                                <p class="small">Pakistan</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div></a
+                      >
+                      <!-- Card End -->
+
+                      <!-- //col ends -->
+                    </div>
+
+                    <div class="col-md-4 clearfix">
+                      <!-- Card Start -->
+                      <a href="" target="_blank">
+                        <div class="card card-size card-shadow border-0">
+                          <div class="">
+                            <img
+                              src="images/bottle-img2.jpg"
+                              alt=""
+                              class="card-img-top"
+                            />
+                            <div class="card-body p-3">
+                              <div class="small_images">
+                                <img
+                                  src="images/bottle-img2.jpg"
+                                  width="32px"
+                                  class="border border-danger border-circular"
+                                  alt=""
+                                />
+                                <img
+                                  src="images/bottle-img2-2.jpg"
+                                  width="32px"
+                                  class="border border-danger border-circular"
+                                  alt=""
+                                />
+                              </div>
+                              <img src="images/badge.PNG" class="mt-2" alt="" />
+                              <p class="card-title crop-text-2 mt-2">
+                                SPORTS WATER BOTTLE LARGE CAPACITY GYM BOTTLE
+                                APOLLO WB-25 - 2.2 LITTERS
+                              </p>
+
+                              <p class="price-style">RS. 909</p>
+                              <p class="small"><del>Rs. 210</del>-10%</p>
+                              <div class="row justify-content-between px-2">
+                                <p class="small">
+                                  <span style="color: #faca51"
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                  ></span>
+                                  (2)
+                                </p>
+                                <p class="small">Pakistan</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <!-- Card End -->
+
+                      <!-- col ends -->
+                    </div>
+                    <div class="col-md-4 clearfix">
+                      <!-- Card Start -->
+                      <a href="" target="_blank">
+                        <div class="card card-size card-shadow border-0">
+                          <div class="">
+                            <img
+                              src="images/bottle-img2.jpg"
+                              alt=""
+                              class="card-img-top"
+                            />
+                            <div class="card-body p-3">
+                              <div class="small_images">
+                                <img
+                                  src="images/bottle-img2.jpg"
+                                  width="32px"
+                                  class="border border-danger border-circular"
+                                  alt=""
+                                />
+                                <img
+                                  src="images/bottle-img2-2.jpg"
+                                  width="32px"
+                                  class="border border-danger border-circular"
+                                  alt=""
+                                />
+                              </div>
+                              <img src="images/badge.PNG" class="mt-2" alt="" />
+                              <p class="card-title crop-text-2 mt-2">
+                                SPORTS WATER BOTTLE LARGE CAPACITY GYM BOTTLE
+                                APOLLO WB-25 - 2.2 LITTERS
+                              </p>
+
+                              <p class="price-style">RS. 909</p>
+                              <p class="small"><del>Rs. 210</del>-10%</p>
+                              <div class="row justify-content-between px-2">
+                                <p class="small">
+                                  <span style="color: #faca51"
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                  ></span>
+                                  (2)
+                                </p>
+                                <p class="small">Pakistan</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <!-- Card End -->
+                      <!-- Card End -->
+
+                      <!-- col ends -->
+                    </div>
+                    <!-- row ends -->
+                  </div>
+                  <!-- slide ends-->
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <!-- Card Start -->
+                      <a href="" target="_blank">
+                        <div class="card card-size card-shadow border-0">
+                          <div class="">
+                            <img
+                              src="images/bottle-img3.jpg"
+                              alt=""
+                              class="card-img-top"
+                            />
+                            <div class="card-body p-3">
+                              <div class="small_images">
+                                <img
+                                  src="images/bottle-img3.jpg"
+                                  width="32px"
+                                  class="border border-danger border-circular"
+                                  alt=""
+                                />
+                              </div>
+                              <img src="images/badge.PNG" class="mt-2" alt="" />
+                              <p class="card-title crop-text-2 mt-2">
+                                SHAKER BOTTLE PROTEIN SHAKER BOTTLE SPRING
+                                BOTTLE WITH TWO SPARE JAR APOLLO WB-01
+                              </p>
+
+                              <p class="price-style">RS. 570</p>
+                              <p class="small"><del>Rs. 600</del>-5%</p>
+                              <div class="row justify-content-between px-2">
+                                <p class="small">
+                                  <span style="color: #faca51"
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                  ></span>
+                                  (2)
+                                </p>
+                                <p class="small">Pakistan</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div></a
+                      >
+                      <!-- Card End -->
+
+                      <!-- //col ends -->
+                    </div>
+
+                    <div class="col-md-4 clearfix">
+                      <!-- Card Start -->
+                      <!-- Card Start -->
+                      <a href="" target="_blank">
+                        <div class="card card-size card-shadow border-0">
+                          <div class="">
+                            <img
+                              src="images/bottle-img3.jpg"
+                              alt=""
+                              class="card-img-top"
+                            />
+                            <div class="card-body p-3">
+                              <div class="small_images">
+                                <img
+                                  src="images/bottle-img3.jpg"
+                                  width="32px"
+                                  class="border border-danger border-circular"
+                                  alt=""
+                                />
+                              </div>
+                              <img src="images/badge.PNG" class="mt-2" alt="" />
+                              <p class="card-title crop-text-2 mt-2">
+                                SHAKER BOTTLE PROTEIN SHAKER BOTTLE SPRING
+                                BOTTLE WITH TWO SPARE JAR APOLLO WB-01
+                              </p>
+
+                              <p class="price-style">RS. 570</p>
+                              <p class="small"><del>Rs. 600</del>-5%</p>
+                              <div class="row justify-content-between px-2">
+                                <p class="small">
+                                  <span style="color: #faca51"
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                  ></span>
+                                  (2)
+                                </p>
+                                <p class="small">Pakistan</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div></a
+                      >
+                      <!-- Card End -->
+
+                      <!-- col ends -->
+                    </div>
+                    <div class="col-md-4 clearfix">
+                      <!-- Card Start -->
+                      <a href="" target="_blank">
+                        <div class="card card-size card-shadow border-0">
+                          <div class="">
+                            <img
+                              src="images/bottle-img3.jpg"
+                              alt=""
+                              class="card-img-top"
+                            />
+                            <div class="card-body p-3">
+                              <div class="small_images">
+                                <img
+                                  src="images/bottle-img3.jpg"
+                                  width="32px"
+                                  class="border border-danger border-circular"
+                                  alt=""
+                                />
+                              </div>
+                              <img src="images/badge.PNG" class="mt-2" alt="" />
+                              <p class="card-title crop-text-2 mt-2">
+                                SHAKER BOTTLE PROTEIN SHAKER BOTTLE SPRING
+                                BOTTLE WITH TWO SPARE JAR APOLLO WB-01
+                              </p>
+
+                              <p class="price-style">RS. 570</p>
+                              <p class="small"><del>Rs. 600</del>-5%</p>
+                              <div class="row justify-content-between px-2">
+                                <p class="small">
+                                  <span style="color: #faca51"
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                  ></span>
+                                  (2)
+                                </p>
+                                <p class="small">Pakistan</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div></a
+                      >
+                      <!-- Card End -->
+
+                      <!-- col ends -->
+                    </div>
+                    <!-- row ends -->
+                  </div>
+                  <!-- slide ends-->
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <!-- Card Start -->
+                      <a href="" target="_blank">
+                        <div class="card card-size card-shadow border-0">
+                          <div class="">
+                            <img
+                              src="images/bottle-img3.jpg"
+                              alt=""
+                              class="card-img-top"
+                            />
+                            <div class="card-body p-3">
+                              <div class="small_images">
+                                <img
+                                  src="images/bottle-img3.jpg"
+                                  width="32px"
+                                  class="border border-danger border-circular"
+                                  alt=""
+                                />
+                              </div>
+                              <img src="images/badge.PNG" class="mt-2" alt="" />
+                              <p class="card-title crop-text-2 mt-2">
+                                SHAKER BOTTLE PROTEIN SHAKER BOTTLE SPRING
+                                BOTTLE WITH TWO SPARE JAR APOLLO WB-01
+                              </p>
+
+                              <p class="price-style">RS. 570</p>
+                              <p class="small"><del>Rs. 600</del>-5%</p>
+                              <div class="row justify-content-between px-2">
+                                <p class="small">
+                                  <span style="color: #faca51"
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                  ></span>
+                                  (2)
+                                </p>
+                                <p class="small">Pakistan</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div></a
+                      >
+                      <!-- Card End -->
+
+                      <!-- //col ends -->
+                    </div>
+
+                    <div class="col-md-4 clearfix">
+                      <!-- Card Start -->
+                      <a href="" target="_blank">
+                        <div class="card card-size card-shadow border-0">
+                          <div class="">
+                            <img
+                              src="images/bottle-img3.jpg"
+                              alt=""
+                              class="card-img-top"
+                            />
+                            <div class="card-body p-3">
+                              <div class="small_images">
+                                <img
+                                  src="images/bottle-img3.jpg"
+                                  width="32px"
+                                  class="border border-danger border-circular"
+                                  alt=""
+                                />
+                              </div>
+                              <img src="images/badge.PNG" class="mt-2" alt="" />
+                              <p class="card-title crop-text-2 mt-2">
+                                SHAKER BOTTLE PROTEIN SHAKER BOTTLE SPRING
+                                BOTTLE WITH TWO SPARE JAR APOLLO WB-01
+                              </p>
+
+                              <p class="price-style">RS. 570</p>
+                              <p class="small"><del>Rs. 600</del>-5%</p>
+                              <div class="row justify-content-between px-2">
+                                <p class="small">
+                                  <span style="color: #faca51"
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                  ></span>
+                                  (2)
+                                </p>
+                                <p class="small">Pakistan</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div></a
+                      >
+                      <!-- Card End -->
+
+                      <!-- col ends -->
+                    </div>
+                    <div class="col-md-4 clearfix">
+                      <!-- Card Start -->
+                      <a href="" target="_blank">
+                        <div class="card card-size card-shadow border-0">
+                          <div class="">
+                            <img
+                              src="images/bottle-img3.jpg"
+                              alt=""
+                              class="card-img-top"
+                            />
+                            <div class="card-body p-3">
+                              <div class="small_images">
+                                <img
+                                  src="images/bottle-img3.jpg"
+                                  width="32px"
+                                  class="border border-danger border-circular"
+                                  alt=""
+                                />
+                              </div>
+                              <img src="images/badge.PNG" class="mt-2" alt="" />
+                              <p class="card-title crop-text-2 mt-2">
+                                SHAKER BOTTLE PROTEIN SHAKER BOTTLE SPRING
+                                BOTTLE WITH TWO SPARE JAR APOLLO WB-01
+                              </p>
+
+                              <p class="price-style">RS. 570</p>
+                              <p class="small"><del>Rs. 600</del>-5%</p>
+                              <div class="row justify-content-between px-2">
+                                <p class="small">
+                                  <span style="color: #faca51"
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                    ><i class="fa fa-star"></i
+                                  ></span>
+                                  (2)
+                                </p>
+                                <p class="small">Pakistan</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div></a
+                      >
+                      <!-- Card End -->
+                      <!-- col ends -->
+                    </div>
+                    <!-- row ends -->
+                  </div>
+                  <!-- slide ends-->
+                </div>
+
+                <!-- inner  -->
+              </div>
+
+              <a
+                href="#multi-cards-row"
+                class="carousel-control-prev"
+                data-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a
+                href="#multi-cards-row"
+                class="carousel-control-next"
+                data-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- foooter -->
+    <div class="footer-primary p-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 pt-2 text-white">
+            <p class="lead">Customer Care</p>
+            <div id="customer-care">
+              <!-- Customer Care Options will be injected through javascript  -->
+            </div>
+            <p class="lead pt-3">Make Money With Us</p>
+            <div id="make-money">
+               <!-- Make Money Options will be injected through javascript  -->
+            </div>
+          </div>
+          <div class="col-md-3 text-white align-self-center">
+            <p class="lead">Daraz</p>
+            <div id="daraz-options">
+              <!-- Daraz Support Options will be injected through javascript  -->
+            </div>
+
+            <p class="small mb-0">
+              NTN Number : <span id="ntn">%NTNNUMBER%</span>
+            </p>
+            <p class="small">
+              STRN Number : <span id="strn">%STRNNUMBER%</span>
+            </p>
+          </div>
+          <div class="col-md-3 pt-5">
+            <div class="row">
+              <div class="col-5">
+                <img
+                  class="border rounded border-circular"
+                  src="images/barcode.png"
+                  width="100px"
+                  height="100px"
+                  alt="barcode"
+                />
+              </div>
+              <div class="col-7">
+                <img
+                  src="images/daraz-icon.png"
+                  width="42px"
+                  height="42px"
+                  alt="Daraz Icon"
+                />
+                <p class="color-orange">Happy Shopping</p>
+                <p style="color: white">Download App</p>
+              </div>
+              <div class="d-flex pl-3 align-items-center">
+                <a
+                  target="_blank"
+                  href="https://apps.apple.com/app/id978058048?scm=1003.4.icms-zebra-5029545-2832850.OTHER_5370750400_2485531&spm=a2a0e.cart.footer_top.20.67347d68bkCRKp"
+                >
+                  <img
+                    src="images/appstore.png"
+                    class="border rounded border-circular"
+                    width="120px"
+                    height="40px"
+                    alt=""
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://play.google.com/store/apps/details?spm=a2a0e.cart.footer_top.21.67347d68bkCRKp&id=com.daraz.android&scm=1003.4.icms-zebra-5029545-2832850.OTHER_5370750400_2485531"
+                >
+                  <img
+                    src="images/playstore.png"
+                    width="140px"
+                    height="60px"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="container pt-3">
+        <div class="row">
+          <div class="col-md-3">
+            <p class="lead">Payment Methods</p>
+            <div style="flex-wrap: wrap" class="d-flex content-wrap">
+              <span class="text-danger icon mr-2"
+                ><i class="fab fa-cc-visa"></i
+              ></span>
+              <span class="text-success icon mr-2"
+                ><i class="fab fa-cc-paypal"></i
+              ></span>
+
+              <span class="icon mr-2 text-primary"
+                ><i class="fab fa-cc-mastercard"></i
+              ></span>
+              <span class="icon mr-2 text-dark"
+                ><i class="fab fa-cc-amex"></i
+              ></span>
+              <span class="icon mr-2 color-orange"
+                ><i class="fab fa-cc-stripe"></i
+              ></span>
+              <span class="icon mr-2 color-aqua"
+                ><i class="fab fa-cc-amazon-pay"></i
+              ></span>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <p class="lead">Daraz International</p>
+            <div class="d-flex">
+              <a href="#">
+                <img src="images/flags/002-pakistan.png" class="m-2" alt="" />
+              </a>
+              <a href="#">
+                <img src="images/flags/001-myanmar.png" class="m-2" alt="" />
+              </a>
+              <a href="#">
+                <img src="images/flags/003-bangladesh.png" class="m-2" alt="" />
+              </a>
+              <a href="#">
+                <img src="images/flags/004-sri-lanka.png" class="m-2" alt="" />
+              </a>
+              <a href="#">
+                <img src="images/flags/005-nepal.png" class="m-2" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <p class="lead">Follow Us</p>
+            <div class="d-flex">
+              <a href="#">
+                <img src="images/social/003-facebook.png" class="m-2" alt="" />
+              </a>
+              <a href="#">
+                <img src="images/social/004-twitter.png" class="m-2" alt="" />
+              </a>
+              <a href="#">
+                <img src="images/social/005-instagram.png" class="m-2" alt="" />
+              </a>
+              <a href="#">
+                <img src="images/social/002-youtube.png" class="m-2" alt="" />
+              </a>
+              <a href="#">
+                <img src="images/social/001-d.png" class="m-2" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <p class="lead">Verified By</p>
+            <img src="images/signature.PNG" alt="" />
+          </div>
+        </div>
+        <p class="lead pt-4">© Daraz 2021</p>
+      </div>
+    </div>
+
+    <!-- Bootstrap Script is writtern below -->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <script src="banners.js"></script>
+    <script src="leftPane.js"></script>
+
+    <script>
+      $(".carousel").carousel({
+        interval: 3000,
+        keyboard: true,
+        pause: "hover",
+      });
+    </script>
+  </body>
+</html>

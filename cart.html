@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Cart</title>
+    
+    
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+
+    
+</head>
+<body class="bg-light">
+
+  <header>
+    <!-- Top navbar with some links -->
+    <nav
+      class="navbar p-0 navbar-expand d-none d-lg-block navbar-light bg-light top-navbar"
+    >
+      <div class="container">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">SAVE MORE ON APP</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">DARAZ AFFILIATE PROGRAM</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">SELLS</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">CUSTOMER CARE</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">TRACK CARE</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">LOGIN</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">SIGN UP</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- pimary NavBar -->
+    <div class="sticky-top shadow">
+      <nav class="navbar navbar-expand-lg bg-white navbar-light pt-2">
+        <div class="container">
+          <div class="w-25">
+            <a href="index.html" class="navbar-brand">
+              <img src="images/logo.png" width="140px" alt="logo-image" />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target=".navbar-drop"
+          >
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+          <div class="collapse navbar-collapse navbar-drop">
+            <ul class="navbar-nav w-100">
+              <li class="nav-item w-75 d-inline">
+                <form class="form-inline pt-2">
+                  <div class="input-group w-100">
+                    <input
+                      type="text"
+                      placeholder="Search in Daraz"
+                      class="form-control bg-light p-2 border-0 w-90"
+                    />
+                    <div class="input-group-append w-10">
+                      <button class="btn btn-danger" type="button">
+                        <i class="fa fa-search w-100"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </li>
+
+              <li class="nav-item pt-1">
+                
+                  <a href="cart.html">
+                    <div class="menutoggle">
+                    <span class="text-dark cart-format">
+                      <ion-icon name="cart-outline"> </ion-icon>
+                    </span>
+                    <span class="badge bg-danger text-white  number-badge"></span>
+                  </div>
+                </a>
+              
+                
+              </li>
+
+              <li class="nav-item w-15 d-none d-lg-block">
+                <a href="#"
+                  ><img height="48px" src="images/app-logo.png" alt="App Link"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Secondary Nav-Bar used for menu -->
+
+      <nav class="navbar navbar-expand-md bg-white navbar-light">
+        <div class="container">
+          <div class="dropdown">
+            <a
+              class="dropdown-toggle pr-8 secondary-font-style h5"
+              data-toggle="dropdown"
+              >Categories</a
+            >
+
+            <div class="dropdown-menu">
+              <!-- All the categories will come here -->
+            </div>
+          </div>
+
+          <div class="collapse navbar-collapse navbar-drop">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a href="#" class="secondary-font-style nav-link"
+                  ><i class="fas fa-globe"></i> Daraz Mall</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="secondary-font-style nav-link"
+                  ><i class="fab fa-dyalog"></i> dMart</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="secondary-font-style nav-link"
+                  ><span><i class="fas fa-ticket-alt mr-2"></i> </span>Fashion &
+                  Lifestyle</a
+                >
+              </li
+              <li class="nav-item">
+                <a href="#" class="secondary-font-style nav-link"
+                  ><i class="fas fa-plane mr-2"></i>Global Collection</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="secondary-font-style nav-link"
+                  ><i class="fas fa-wallet mr-2"></i>Digital Sahulat</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="secondary-font-style nav-link"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- *********************header ends here************************************************************* -->
+
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-8 pb-5" id="cards-div">
+            <div class="mt-3 p-2 bg-white">
+                <p class="small">Preffered Delivery Option</p>
+                <div class="card w-25 border border-circular border-danger">
+                    <div class="card-body">
+                        <p class="card-title mb-1">  Rs.168 <span class="ml-1 color-aqua"><i class="fa fa-truck"></i></span></p>
+                        <p class="card-text small mb-0">Standard</p>
+                        <p class="small primary-gray mb-0">Get by 20-23 Feb 2021</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="d-flex mt-2 align-items-center bg-white px-2">
+               
+               
+                <div class="mt-3 ml-3"> <p class="primary-gray"> All Items</p></div>
+                
+            </div>
+            
+ 
+
+
+        </div>
+
+
+        <div class="col-md-4 mt-3 bg-white p-3 h-50">
+            <p class="lead">Order Summary Items:<span id="count">0</span></p>
+            <div class="d-flex justify-content-between" >
+                <div class="">
+               <p class="small primary-gray">Subtotal (<span class='small'>Without Delivery Charges</span>)</p>
+                
+              </div>
+                    <div class=""><p>Rs.<span id="stotal-price">0</span></p></div>
+            </div>
+            
+                <input type="text" class="form-control w-75 d-inline" placeholder="Enter Vouncher Code">
+                <button class="m btn btn-danger border-0">APPLY</button>
+                <div class="d-flex justify-content-between mt-3" >
+                    <div class="">
+                   <p >Total</p>
+                    </div>
+                        <div class="color-orange"><p>Rs.<span id="total-price">0</span></p></div>
+                </div>
+                <button class="btn btn-block btn-danger text-uppercase">Proceed to Check Out</button>
+        </div>
+
+    </div>
+
+</div>
+
+
+    
+
+    <!-- Footer starts here******************************************************************************** -->
+
+    <footer>
+      <div class="footer-primary p-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 pt-2 text-white">
+              <p class="lead">Customer Care</p>
+              <div id="customer-care">
+                <!-- Customer Care Options will be injected through javascript  -->
+              </div>
+              <p class="lead pt-3">Make Money With Us</p>
+              <div id="make-money">
+                 <!-- Make Money Options will be injected through javascript  -->
+              </div>
+            </div>
+            <div class="col-md-3 text-white align-self-center">
+              <p class="lead">Daraz</p>
+              <div id="daraz-options">
+                <!-- Daraz Support Options will be injected through javascript  -->
+              </div>
+  
+              <p class="small mb-0">
+                NTN Number : <span id="ntn">%NTNNUMBER%</span>
+              </p>
+              <p class="small">
+                STRN Number : <span id="strn">%STRNNUMBER%</span>
+              </p>
+            </div>
+            <div class="col-md-3 pt-5">
+              <div class="row">
+                <div class="col-5">
+                  <img
+                    class="border rounded border-circular"
+                    src="images/barcode.png"
+                    width="100px"
+                    height="100px"
+                    alt="barcode"
+                  />
+                </div>
+                <div class="col-7">
+                  <img
+                    src="images/daraz-icon.png"
+                    width="42px"
+                    height="42px"
+                    alt="Daraz Icon"
+                  />
+                  <p class="color-orange">Happy Shopping</p>
+                  <p style="color: white">Download App</p>
+                </div>
+                <div class="d-flex pl-3 align-items-center">
+                  <a
+                    target="_blank"
+                    href="https://apps.apple.com/app/id978058048?scm=1003.4.icms-zebra-5029545-2832850.OTHER_5370750400_2485531&spm=a2a0e.cart.footer_top.20.67347d68bkCRKp"
+                  >
+                    <img
+                      src="images/appstore.png"
+                      class="border rounded border-circular"
+                      width="120px"
+                      height="40px"
+                      alt=""
+                    />
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://play.google.com/store/apps/details?spm=a2a0e.cart.footer_top.21.67347d68bkCRKp&id=com.daraz.android&scm=1003.4.icms-zebra-5029545-2832850.OTHER_5370750400_2485531"
+                  >
+                    <img
+                      src="images/playstore.png"
+                      width="140px"
+                      height="60px"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="container pt-3">
+          <div class="row">
+            <div class="col-md-3">
+              <p class="lead">Payment Methods</p>
+              <div style="flex-wrap: wrap" class="d-flex content-wrap">
+                <span class="text-danger icon mr-2"
+                  ><i class="fab fa-cc-visa"></i
+                ></span>
+                <span class="text-success icon mr-2"
+                  ><i class="fab fa-cc-paypal"></i
+                ></span>
+  
+                <span class="icon mr-2 text-primary"
+                  ><i class="fab fa-cc-mastercard"></i
+                ></span>
+                <span class="icon mr-2 text-dark"
+                  ><i class="fab fa-cc-amex"></i
+                ></span>
+                <span class="icon mr-2 color-orange"
+                  ><i class="fab fa-cc-stripe"></i
+                ></span>
+                <span class="icon mr-2 color-aqua"
+                  ><i class="fab fa-cc-amazon-pay"></i
+                ></span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <p class="lead">Daraz International</p>
+              <div class="d-flex">
+                <a href="#">
+                  <img src="images/flags/002-pakistan.png" class="m-2" alt="" />
+                </a>
+                <a href="#">
+                  <img src="images/flags/001-myanmar.png" class="m-2" alt="" />
+                </a>
+                <a href="#">
+                  <img src="images/flags/003-bangladesh.png" class="m-2" alt="" />
+                </a>
+                <a href="#">
+                  <img src="images/flags/004-sri-lanka.png" class="m-2" alt="" />
+                </a>
+                <a href="#">
+                  <img src="images/flags/005-nepal.png" class="m-2" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <p class="lead">Follow Us</p>
+              <div class="d-flex">
+                <a href="#">
+                  <img src="images/social/003-facebook.png" class="m-2" alt="" />
+                </a>
+                <a href="#">
+                  <img src="images/social/004-twitter.png" class="m-2" alt="" />
+                </a>
+                <a href="#">
+                  <img src="images/social/005-instagram.png" class="m-2" alt="" />
+                </a>
+                <a href="#">
+                  <img src="images/social/002-youtube.png" class="m-2" alt="" />
+                </a>
+                <a href="#">
+                  <img src="images/social/001-d.png" class="m-2" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <p class="lead">Verified By</p>
+              <img src="images/signature.PNG" alt="" />
+            </div>
+          </div>
+          <p class="lead pt-4">© Daraz 2021</p>
+        </div>
+      </div>
+  
+    </footer>
+
+
+
+    <!-- Bootstrap Script is writtern below -->
+    <script src="cart.js"></script>
+    <script src="banners.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(".carousel").carousel({
+        interval: 3000,
+        keyboard: true,
+        pause: "hover",
+      });
+    </script>
+  </body>
+</html>
